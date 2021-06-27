@@ -1,0 +1,96 @@
+@import '__mixin';
+
+.container-mobile-shop {
+    width: 100%;
+    h1 {
+        margin: 0rem;
+        margin-top: 2rem;
+    }
+    .col-6 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .caja-product-mobile {
+        border: 2px solid #54e1eb;
+        padding: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        height: 98%;
+
+        &:hover {
+            transform: scale(1, 1.01);
+        }
+
+        img {
+            width: 100%;
+            border-radius: 8px;
+            border: 1px solid #54e1eb;
+            height: 60%;
+        }
+
+        h2 {
+            @include fuente(30px);
+        }
+
+        h3 {
+            color: #f8f6f6;
+            font-size: 35px;
+        }
+
+        h4 {
+            @include precioOferta(19px);
+
+            &:hover {
+                @include precioOferta(19px);
+            }
+        }
+    }
+
+}
+
+@media(max-width:767px) {
+    .container-mobile-shop {
+        h1 {
+            text-align: center;
+            width: 100%;
+        }
+
+        .col-6 {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+
+            .caja-product-mobile {
+                border: 1px solid #54e1eb;
+                padding: 2vh;
+                height: 100%;
+
+                h2 {
+                    font-size: 20px;
+                    letter-spacing: 0;
+                    padding-bottom: 0.5vh;
+                    color: #a8a4a4;
+                }
+
+
+                h3 {
+                    color: white;
+                }
+
+                h4 {
+                    text-decoration-line: line-through;
+                    margin-top: 1rem;
+                    color: #d8d2d2;
+                    font-size: 15px;
+                }
+
+                img {
+                    width: 100%;
+                    border-radius: 8px;
+                    border: 1px solid #54e1eb;
+                    height: 45%;
+                }
+            }
+        }
+    }
+}

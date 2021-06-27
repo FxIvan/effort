@@ -1,0 +1,59 @@
+/*  NOSOTROS    */
+
+@mixin estiloH2 {
+    margin: 2rem 0rem 3rem 9rem;
+}
+
+@mixin contenedorNosotros($centrar, $tamaño, $display, $margin-bottom) {
+    justify-content: $centrar;
+    width: $tamaño;
+    display: $display;
+    margin-bottom: $margin-bottom;
+}
+
+@mixin textoNosotro($tamaño, $padding-left, $line-height) {
+    width: $tamaño;
+    padding-left: $padding-left;
+    line-height: $line-height;
+}
+
+/*  APLICANDO IF    */
+/*  h2 */
+@mixin fuente($tamaño) {
+    @if $tamaño==30px {
+        font-size: 30px;
+        letter-spacing: 0;
+        padding-bottom: 0.5vh;
+        color: #f8f6f6;
+    }
+
+    @else {
+        font-family: "Epilogue", sans-serif;
+        font-size: 1.4rem;
+        color: #db2f2f;
+    }
+}
+
+/*                  */
+/*  PRECIO OFERTA  __shop.scss*/
+/* si el tamaño del h4 es mayor a 20px desaparece el precio oferta*/
+@mixin  precioOferta($tamaño) {
+    @if $tamaño <=19px {
+        text-decoration-line: line-through;
+        margin-top: 1rem;
+        color: #d8d2d2;
+        font-size: $tamaño;
+    }@else if $tamaño >= 20px{
+        display: none;
+    }
+
+}
+
+/* MAPS PARA LO TAMAÑOS __nosotros.scss */
+
+$tamañoNosotros: (
+    width-1: 50%,
+    width-2: 100%,
+    width-3: 97%,
+    padding-1: 0
+);

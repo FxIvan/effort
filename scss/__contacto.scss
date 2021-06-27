@@ -1,0 +1,41 @@
+#contacto{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    width: 100%;
+    text-align: center;
+}
+
+.container-contacto{
+    display: flex;
+    width: 95%;
+    justify-content: center;
+    margin-bottom: 6rem;
+    .container-datos{
+        padding-right: 2rem;
+        width: 45%;
+        margin-left: 5rem;
+        img{
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            border: 3px solid black;
+        }
+    }
+}
+
+@media(max-width:767px){
+    .container-contacto{
+        display: initial;
+        .container-datos{
+            width: 100%;
+            margin: 0;
+            padding-left: 2rem;
+        }
+        .container-mapa{
+            iframe{
+                margin: 0.5rem;
+                width: 95%;
+            }
+        }
+    }
+}

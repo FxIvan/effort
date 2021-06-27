@@ -1,0 +1,58 @@
+.container-general {
+    margin-top: 3rem;
+
+    .container-info-map {
+
+        img {
+            width: 100%;
+        }
+
+        .container-info {
+            img {
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }
+}
+
+.container-form {
+    label {
+        font-size: 1.5rem;
+        color: white;
+    }
+
+    .botonConfirmar {
+        text-align: center;
+        width: 50%;
+
+        input {
+            width: 20%;
+        }
+    }
+
+    margin: 2rem 2rem 2rem 8rem;
+
+    input {
+        width: 50%;
+    }
+
+    .mensaje {
+        textarea, p a, p{
+            width: 50%;
+        }
+
+        a{
+            font-size: 20px;
+            font-family: 'Epilogue', sans-serif;
+        }
+
+        p{
+            font-size: 20px;
+            font-family: 'Epilogue', sans-serif;
+        }
+        input{
+            width: 3%;
+        }
+    }
+}

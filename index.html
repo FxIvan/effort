@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- maximun-scale=5.0 permite que el usuario puede hacer zoom y da mas accesibilidad-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <!-- JS BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- LINKEANDO CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- FUENTE -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap" rel="stylesheet">
+    <!-- MetaEtiquetas-->
+    <!-- 70 a 320 caracteres-->
+    <meta name="description" content="Somos una pagina dedicada a la venta de indumentaria para hombre y mujeres, con atencion personalizada">
+    <!-- Palabras Clave-->
+    <meta name="keywords" content="ropa, indumentaria, buzos, remeras, verano, invierno, otoño, colores, camperas, hombre, mujer, quilmes, buenos aires, ropa economica, ropa unisex ">
+    <!-- Protocolo open graph, descripcion cuando compartimos un link-->
+    <meta property="og:title" content="EFFORT | Varios tipos de ropas para hombre y mujer">
+    <meta property="og:description" content="Somos una pagina dedicada a la venta de indumentaria para hombre y mujeres, con atencion personalizada">
+    <meta property="og:site_name" content="EFFORT">
+    <meta property="og:url" content="http://127.0.0.1:5501/img/230x230.jpg">
+
+
+    <title>EFFORT | Varios tipos de ropas para hombre y mujer</title>
+</head>
+
+<body>
+    <!--
+        title
+
+        loading="lazy"  <--- cuando esta cargando la pagina espera dentro de la etiqueta img
+
+    -->
+    <!-- HEADER-->
+    <header>
+        <div class="container-header">
+
+            <!-- HEADER MOBILE -->
+
+            <div class="container d-sm-none d-md-none d-lg-none d-xl-none d-xl-none d-xxl-none">
+                <div class="row container-mobile-header">
+
+                    <div class="col-8">
+                        <h1>EFFORT</h1>
+                        <section class="bolitaAnimacion">
+                            <div class="bolita1"></div>
+                        </section>
+                    </div>
+
+                    <div class="dropdown col-4 .bottonMobileDropDown">
+                        <button class="btn btn-primary dropdown-toggle .buttonDropDown" type="button"
+                            id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                            Menu
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="./index.html" title="principal">Home</a></li>
+                            <li><a class="dropdown-item" href="./html/shopH.html" title="ropa de hombre">Hombre</a></li>
+                            <li><a class="dropdown-item" href="./html/shopM.html" title="ropa de mujer">Mujer</a></li>
+                            <li><a class="dropdown-item" href="./html/campera.html" title="todo camperas">Campera</a></li>
+                            <li><a class="dropdown-item" href="./html/remera.html" title="toda remera">Remera</a></li>
+                            <li><a class="dropdown-item" href="./html/pantalon.html" title="todo pantalon">Pantalon</a></li>
+                            <li><a class="dropdown-item" href="./html/buzos.html" title="todo buzos">Buzos</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- HEADER MOBILE -->
+
+            <div class="container-enlaces">
+                <nav>
+                    <ul>
+                        <li><a href="./index.html" id="logo" title="principal">EFFORT</a></li>
+                        <li><a href="./index.html" title="Principal" title="ropa de hombre">HOME</a></li>
+                        <li><a href="nosotros" title="nosotros">NOSOTROS</a></li>
+                        <li><a href="./html/shopH.html" title="ropa de hombre">HOMBRE</a></li>
+                        <li><a href="./html/shopM.html" title="ropa de mujer">MUJER</a></li>
+                        <!-- Menu Desplegable-->
+                        <li id="productoEnlace"><a href="#">PRODUCTOS</a>
+                            <ul>
+                                <li><a href="./html/campera.html" title="todo camperas">Campera</a></li>
+                                <li><a href="./html/remera.html" title="toda remera">Remera</a></li>
+                                <li><a href="./html/pantalon.html" title="todo pantalon">Pantalon</a></li>
+                                <li><a href="./html/buzos.html" title="todo buzos">Buzos</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./html/faq.html">PREGUNTAS</a></li>
+                        <li id="contacto"><a href="./html/contact.html" title="contactanos">CONTACTO</a></li>
+                    </ul>
+                </nav>
+                <section class="bolitaAnimacion">
+                    <div class="bolita1"></div>
+                </section>
+            </div>
+    </header>
+
+    <!--     Aqui termina HEADER-->
+
+    <!--    SECCION NOSOTROS   -->
+
+    <section class="nosotrosSection" id="nosotrosTexto">
+
+
+        <h2 id="nosotros">Nosotros</h2>
+
+        <div class="container-nosotros">
+            <div class="textoNosotros">
+
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique quo pariatur sint,
+                    ipsa consequuntur neque quisquam velit, aspernatur qui odio autem facere reiciendis
+                    facilis alias nemo, nesciunt voluptate debitis sequi?
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique quo pariatur sint,
+                    ipsa consequuntur neque quisquam velit, aspernatur qui odio autem facere reiciendis
+                    facilis alias nemo, nesciunt voluptate debitis sequi?
+                </p>
+            </div>
+
+            <div class="imgNosotros">
+                <img src="img/230x230.jpg" alt="">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--    Aqui termina SECCION NOSOTROS-->
+
+    <!--    Aqui Empieza el Banner Seguridad, Calidad y Garantia    -->
+
+    <section>
+
+        <div class="container-banner">
+
+
+            <img src="img/230x230.jpg" alt="seguridad" id="seguridad">
+            <img src="img/230x230.jpg" alt="calidad" id="calidad">
+            <img src="img/230x230.jpg" alt="garantia" id="garantia">
+
+        </div>
+
+    </section>
+
+    <!--    Aqui Termina el Banner Seguridad, Calidad y Garantia    -->
+
+    <!--    Aqui empieza la Seccion Oferta  -->
+
+    <section>
+
+        <div class="container">
+
+            <h2 class="text-center tituloOferta">OFERTAS</h2>
+
+            <div class="row">
+
+                <div class="col-6  col-sm-3 caja-oferta">
+                    <a href="../html/product.html">
+                        <img src="../img/remera_negra.jpg" alt="">
+                        <h4>$0000</h4>
+                        <h3>$0000</h3>
+                        <h2 class="text-break">Esto es un titulo con respectivo caracteres</h2>
+                    </a>
+                </div>
+
+                <div class="col-6 col-sm-3 caja-oferta">
+                    <a href="../html/product.html">
+                        <img src="../img/remera_negra.jpg" alt="">
+                        <h4>$0000</h4>
+                        <h3>$0000</h3>
+                        <h2 class="text-break">Esto es un titulo con respectivo caracteres</h2>
+                    </a>
+                </div>
+
+                <div class="col-6 col-sm-3 caja-oferta">
+                    <a href="../html/product.html">
+                        <img src="../img/remera_negra.jpg" alt="">
+                        <h4>$000</h4>
+                        <h3>$0000</h3>
+                        <h2 class="text-break">Esto es un titulo con respectivo caracteres</h2>
+                    </a>
+                </div>
+
+                <div class="col-6 col-sm-3 caja-oferta">
+                    <a href="../html/product.html">
+                        <img src="../img/remera_negra.jpg" alt="">
+                        <h4>$000</h4>
+                        <h3>$0000</h3>
+                        <h2 class="text-break">Esto es un titulo con respectivo caracteres</h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--    Aqui Termina la Seccion Oferta  -->
+
+    <!--    Aqui empieza la Seccion Contacto-->
+
+    <section>
+
+        <h2 id="contacto">Contacto</h2>
+
+        <div class="container-contacto">
+
+            <div class="container-datos">
+
+                <div class="contactoWhatsapp">
+                    <p> <img src="img/150x150.jpg" alt="whatsapp">+54 1136887781</p>
+                    <p> <img src="img/150x150.jpg" alt="whatsapp">+54 39653238</p>
+
+                </div>
+
+                <div class="contactoUbicacion">
+                    <p><img src="img/150x150.jpg" alt="whatsapp">Buenos Aires, Quilmes, Rio Desaguadero 5014</p>
+                </div>
+                <div class="ContactoHorario">
+
+                    <p><img src="img/150x150.jpg" alt="whatsapp">Lunes a Viernes de 8:00hs a 12:00hs y 15:00hs a 20:00hs
+                    </p>
+                    <p class="horaSabado">Sabado de 8:00hs a 15:00hs</p>
+
+                </div>
+            </div>
+
+
+            <!--MAPA-->
+            <div class="container-mapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3278.1456694501658!2d-58.236461584683624!3d-34.751923172862064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32f1fcf770435%3A0x9fa812ae31d4cd22!2sEzpeleta!5e0!3m2!1ses!2sar!4v1620166592179!5m2!1ses!2sar"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--    Aqui termina la seccion Contacto-->
+
+    <!--     Aqui Empieza el Footer    -->
+    <footer>
+
+        <!--    footer mobile -->
+        <div
+            class="footer-container-mobile container-fluid d-sm-none d-md-none d-lg-none d-xl-none d-xl-none d-xxl-none">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2>EFFORT</h2>
+                </div>
+
+                <div class="col-12 text-center">
+                    <p class="fs-6">creado por Almendra Ivan ( ͡❛ ͜ʖ ͡❛)✌</p>
+                </div>
+            </div>
+        </div>
+        <!--    footer mobile -->
+
+        <div class="container-footer">
+            <div class="footer-logo">
+                <a href="../index.html" id="logo-footer">EFFORT</a>
+            </div>
+            <div class="footer-home">
+                <h3>HOME</h3>
+                <nav>
+                    <ul>
+                        <li><a href="">NOSOTROS</a></li>
+                        <li><a href="shopH.html">HOMBRE</a></li>
+                        <li><a href="shopM.html">MUJER</a></li>
+                        <li><a href="faq.html">PREGUNTAS</a></li>
+                        <li><a href="contact.html">CONTACTO</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-seguinos">
+                <h3>SEGUINOS</h3>
+                <div>
+                    <img src="../img/150x150.jpg" alt=""><a href="https://instagram.com"
+                        target="_blank" title="Instagram">effort_ind</a><br>
+                    <img src="../img/150x150.jpg" alt=""><a href="https://facebook.com" target="_blank" title="Facebook">Effort
+                        Indumentarias</a><br>
+                    <img src="../img/150x150.jpg" alt=""><a href="https://tiktok.com" target="_blank" title="TikTok">effort_indum</a>
+                </div>
+            </div>
+
+            <div class="footer-telefonos">
+                <h3>TELEFONOS</h3>
+                <div class="tel-whatsapp">
+                    <img src="../img/150x150.jpg" alt="">
+                    <p>+54 1136887781</p>
+                </div>
+                <div class="tel-telefono">
+                    <img src="../img/150x150.jpg" alt="">
+                    <p>+54 39653238</p>
+                </div>
+            </div>
+            <div class="footer-firma">
+                <h3>CREADO POR</h3>
+                <img src="../img/230x230.jpg" alt="">
+                <h3>Almendra Ivan</h3>
+            </div>
+
+        </div>
+    </footer>
+    <!--     Aqui Termina el Footer-->
+
+    <!--    BOOTSTRAP       -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+@import '__mixin';
+
+.nosotrosSection {
+    h2 {
+        @include estiloH2;
+    }
+    .container-nosotros {
+        @include contenedorNosotros(center, 100%, flex , 3rem);
+        .textoNosotros {
+            @include textoNosotro(50%,10rem,2rem);
+        }
+
+        .imgNosotros {
+            width: map-get($tamañoNosotros, width-1 );
+            text-align: center;
+        }
+    }
+
+}
+
+@media(max-width:796px){
+    .nosotrosSection{
+        width: map-get($tamañoNosotros, width-2 );
+        #nosotros{
+            width: map-get($tamañoNosotros, width-2 );
+            text-align: center;
+            margin: 2rem 0rem 2rem 0rem;
+        }
+        .container-nosotros{
+            .imgNosotros{
+                display: none;
+            }
+            .textoNosotros{
+                p{
+                    width: map-get($tamañoNosotros, width-3 );
+                    padding: map-get($tamañoNosotros, padding-1);
+                    text-align: center;
+                }
+                width: map-get($tamañoNosotros, width-3 );
+                padding: map-get($tamañoNosotros, padding-1);
+                text-align: center;
+                }
+        }
+    }
+}
