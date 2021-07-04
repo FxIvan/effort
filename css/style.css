@@ -95,17 +95,17 @@ footer .container-footer .tel-telefono {
 body h1 {
   font-family: "Epilogue", sans-serif;
   font-size: 2.2rem;
-  color: #dbd9d9;
+  color: #f3f0f0;
 }
 body h2 {
   font-family: "Epilogue", sans-serif;
   font-size: 2rem;
   letter-spacing: 3px;
-  color: #666464;
+  color: #f3f0f0;
 }
 body h3 {
   font-family: "Epilogue", sans-serif;
-  color: #c7c6c6;
+  color: #f3f0f0;
 }
 body p {
   font-family: "Epilogue", sans-serif;
@@ -289,6 +289,9 @@ li {
   width: 50%;
   text-align: center;
 }
+.nosotrosSection .container-nosotros .imgNosotros img {
+  width: 75%;
+}
 
 @media (max-width: 796px) {
   .nosotrosSection {
@@ -317,13 +320,13 @@ li {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-  background-image: linear-gradient(#e4e6ec, #d6d6ec);
+  background-color: black;
   padding: 2rem 0rem 2rem 0rem;
 }
 .container-banner img {
   border-radius: 50%;
   border: 4px solid black;
-  width: 12%;
+  width: 10%;
 }
 
 @media (max-width: 767px) {
@@ -434,7 +437,7 @@ li {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  border: 3px solid black;
+  margin-right: 13px;
 }
 
 @media (max-width: 767px) {
@@ -545,7 +548,7 @@ li {
   }
 }
 body {
-  background-color: #03034e;
+  background-color: #060692;
 }
 
 .container-general {
@@ -591,9 +594,6 @@ body {
   width: 3%;
 }
 
-.fondoFaq {
-  background-image: url(../img/fondoPreguntas.svg);
-}
 .fondoFaq p {
   margin-bottom: 0;
 }
