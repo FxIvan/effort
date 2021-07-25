@@ -598,4 +598,84 @@ body {
   margin-bottom: 0;
 }
 
+.descriptionImgContainer {
+  width: 100%;
+  display: flex;
+}
+.descriptionImgContainer .imgContainer {
+  width: 120%;
+  display: grid;
+  grid-template-areas: "imgGrande imgChica" "imgGrande imgChica2" "imgGrande imgChica3";
+  grid-template-rows: 24% 34% 34%;
+}
+.descriptionImgContainer .imgContainer .imgGrande {
+  width: 100%;
+  grid-area: imgGrande;
+}
+.descriptionImgContainer .imgContainer .imgGrande img {
+  width: 100%;
+}
+.descriptionImgContainer .imgContainer .imgChica {
+  grid-area: imgChica;
+}
+.descriptionImgContainer .imgContainer .imgChica img {
+  width: 30%;
+  margin-left: 1rem;
+}
+.descriptionImgContainer .imgContainer .imgChica2 {
+  grid-area: imgChica2;
+  display: flex;
+  align-items: center;
+}
+.descriptionImgContainer .imgContainer .imgChica2 img {
+  width: 30%;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+.descriptionImgContainer .imgContainer .imgChica3 {
+  grid-area: imgChica3;
+}
+.descriptionImgContainer .imgContainer .imgChica3 img {
+  width: 30%;
+  margin-left: 1rem;
+}
+
+.productGeneral {
+  display: flex;
+}
+
+footer {
+  position: relative;
+  bottom: -2rem;
+}
+
+@media (max-width: 767px) {
+  .productGeneral .descriptionImgContainer {
+    display: block;
+  }
+  .productGeneral .descriptionImgContainer .imgContainer {
+    display: inline;
+  }
+  .productGeneral .descriptionImgContainer .imgContainer .imgChica {
+    display: none;
+  }
+  .productGeneral .descriptionImgContainer .imgContainer .imgChica2 {
+    display: none;
+  }
+  .productGeneral .descriptionImgContainer .imgContainer .imgChica3 {
+    display: none;
+  }
+
+  .iconContact {
+    display: flex;
+  }
+  .iconContact img {
+    width: 80%;
+  }
+
+  footer {
+    position: absolute;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

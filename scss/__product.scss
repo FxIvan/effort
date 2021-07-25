@@ -1,0 +1,96 @@
+.descriptionImgContainer {
+    width: 100%;
+    display: flex;
+
+    .imgContainer {
+        width: 120%;
+
+        .imgGrande {
+            width: 100%;
+            grid-area: imgGrande;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .imgChica {
+            grid-area: imgChica;
+
+            img {
+                width: 30%;
+                margin-left: 1rem;
+            }
+        }
+
+        .imgChica2 {
+            grid-area: imgChica2;
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 30%;
+                margin-left: 1rem;
+                margin-top: 1rem;
+            }
+        }
+
+        .imgChica3 {
+            grid-area: imgChica3;
+
+            img {
+                width: 30%;
+                margin-left: 1rem;
+            }
+        }
+
+        display: grid;
+        grid-template-areas: 'imgGrande imgChica'
+        'imgGrande imgChica2'
+        'imgGrande imgChica3';
+        grid-template-rows: 24% 34% 34%;
+    }
+}
+
+.productGeneral {
+    display: flex;
+}
+footer{
+    position: relative;
+    bottom: -2rem;
+}
+
+@media(max-width:767px) {
+    .productGeneral {
+        .descriptionImgContainer {
+            display: block;
+
+            .imgContainer {
+                display: inline;
+                .imgChica {
+                    display: none;
+                }
+
+                .imgChica2 {
+                    display: none;
+                }
+
+                .imgChica3 {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .iconContact{
+        display: flex;
+        img{
+            width: 80%;
+        }
+    }
+
+    footer{
+        position: absolute;
+        padding: -20rem;
+    }
+}
